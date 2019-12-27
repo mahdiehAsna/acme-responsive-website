@@ -1,0 +1,223 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100px;
+  background-color: #37424A;
+  border-bottom: 4px solid #B54637;
+}
+
+header .container #branding h1 {
+  font-size: 150%;
+  color: white;
+}
+
+header .container #branding h1 .highlight {
+  color: #B54637;
+}
+
+header .container nav {
+  font-weight: bold;
+}
+
+header .container nav ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+header .container nav ul li .current a {
+  color: red;
+}
+
+header .container nav ul li {
+  display: inline;
+}
+
+header .container nav ul li a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: white;
+}
+
+#showcase {
+  background: url("../img/showcase.jpg") no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+#showcase .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 8rem;
+}
+
+#showcase .container h1 {
+  font-size: 300%;
+  color: white;
+  text-align: center;
+}
+
+#showcase .container p {
+  padding-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+#newsletter .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100px;
+  background-color: #37424A;
+}
+
+#newsletter .container h1 {
+  color: white;
+  font-size: 130%;
+}
+
+#newsletter .container input {
+  border: 0px;
+  border-radius: 0%;
+  padding: 0.55rem 0rem;
+}
+
+#newsletter .container .button_1 {
+  font-weight: bold;
+  border-radius: 0%;
+  background-color: #E94920;
+  color: white;
+  padding: 0.6rem;
+  border: 0px;
+}
+
+#newsletter .container .button_1:hover {
+  background-color: #c33713;
+}
+
+#boxes .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#boxes .container .box {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+  padding: 3rem;
+}
+
+#boxes .container .box img {
+  max-width: 30%;
+  height: auto;
+}
+
+#boxes .container .box h3 {
+  padding: 1rem;
+  font-size: 110%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  color: white;
+  background-color: #E94920;
+  font-size: 120%;
+  font-weight: bold;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media screen and (max-width: 760px) {
+  #showcase .container {
+    margin: auto;
+  }
+  #newsletter .container {
+    font-weight: 100%;
+  }
+  #boxes .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer {
+    font-size: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
