@@ -139,7 +139,7 @@ header .container nav ul li a {
 #newsletter .container input {
   border: 0px;
   border-radius: 0%;
-  padding: 0.55rem 0rem;
+  padding: 0.55rem 1rem;
 }
 
 #newsletter .container .button_1 {
@@ -163,6 +163,12 @@ header .container nav ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #boxes .container .box {
@@ -182,6 +188,95 @@ header .container nav ul li a {
 #boxes .container .box h3 {
   padding: 1rem;
   font-size: 110%;
+}
+
+#main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem;
+  padding: 2rem;
+  line-height: 1.8rem;
+  font-size: 110%;
+}
+
+#main .container #main-col {
+  margin: 0rem 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .container p {
+  margin: 2rem 0rem;
+}
+
+#main .container h1 {
+  padding: 0rem 0rem;
+  margin-bottom: 1rem;
+}
+
+#main .container .dark {
+  background-color: #37424A;
+  color: white;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+#main .container #services {
+  list-style-type: none;
+}
+
+#main .container #services li {
+  background-color: #D3D3D3;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#main .container #sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#main .container #sidebar input {
+  border: 0px;
+  border-radius: 0%;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#main .container #sidebar textarea {
+  border: 0px;
+  border-radius: 0%;
+  padding: 1rem 8.7rem 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#main .container #sidebar .button_1 {
+  font-weight: bold;
+  border-radius: 0%;
+  background-color: #E94920;
+  color: white;
+  padding: 1rem 2rem;
+  border: 0px;
+}
+
+#main .container #sidebar .button_1:hover {
+  background-color: #c33713;
 }
 
 footer {
@@ -218,6 +313,23 @@ footer {
   }
   footer {
     font-size: 100%;
+  }
+  #main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem;
+    line-height: 1.6rem;
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #boxes .container, #main .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

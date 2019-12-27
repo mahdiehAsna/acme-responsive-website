@@ -108,7 +108,7 @@ header .container{
     input{
         border: 0px;
         border-radius:0%;
-        padding: 0.55rem 0rem;
+        padding: 0.55rem 1rem;
     }
     .button_1{
         font-weight: bold;
@@ -126,6 +126,8 @@ header .container{
 #boxes .container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     .box{
         img{
             max-width: 30%;
@@ -142,6 +144,83 @@ header .container{
     }
 }
 
+
+#main .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 2rem;
+    line-height: 1.8rem;
+    font-size: 110%;
+    
+    #main-col{
+        margin: 0rem 2rem;
+        align-items: center;
+    }
+
+    p{
+        margin: 2rem 0rem;
+    }
+    
+    h1{
+        padding: 0rem 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .dark{
+        background-color: #37424A;
+        color: white;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    #services{
+
+        list-style-type: none;
+        li{
+            background-color: #D3D3D3;
+            padding: 1rem 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    #sidebar{
+        display: flex;
+        flex-direction: row;
+        input{
+            border: 0px;
+            border-radius:0%;
+            padding: 1rem 1rem;
+            margin-bottom: 1rem;
+        }
+
+        textarea{
+            border: 0px;
+            border-radius:0%;
+            padding: 1rem 8.7rem 1rem 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .button_1{
+            font-weight: bold;
+            border-radius: 0%; 
+            background-color: #E94920;
+            color: white;
+            padding: 1rem 2rem;
+            border: 0px;
+            &:hover{
+                background-color: darken(#E94920, 10);
+            }
+        }
+
+    }
+}
+
+
+
+
+
 footer{
     display: flex;
     align-items: center;
@@ -154,6 +233,8 @@ footer{
     flex-shrink: 0;
 }
 
+
+
 @media screen and (max-width:760px){
     #showcase .container{
         margin: auto;
@@ -161,7 +242,6 @@ footer{
 
     #newsletter .container{
         font-weight: 100%;
-       // justify-content: space-between;
     }
 
     #boxes .container{
@@ -171,4 +251,19 @@ footer{
     footer{
         font-size:100%;
     }
+
+    #main .container{
+        flex-direction: column;
+        margin: 1rem;
+        line-height: 1.6rem;
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width:1200px){
+   #boxes .container, #main .container{
+       width: 1200px;
+       margin-left: auto;
+       margin-right: auto;
+   }
 }
