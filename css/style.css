@@ -55,10 +55,6 @@ header .container nav ul {
   list-style-type: none;
 }
 
-header .container nav ul li .current a {
-  color: red;
-}
-
 header .container nav ul li {
   display: inline;
 }
@@ -68,6 +64,10 @@ header .container nav ul li a {
   padding: 0.5em 1.5em;
   text-decoration: none;
   color: white;
+}
+
+header .container nav ul .current a {
+  color: #E94920;
 }
 
 #showcase {
